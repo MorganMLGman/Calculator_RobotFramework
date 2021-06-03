@@ -1,1 +1,2 @@
-#Instrukcja kompilacji projektu w C do biblioteki dll
+# Projekt mający na celu pokazanie możliwości testowania kodu napisanego w języku C, przy wykorzystaniu jeżyka Python oraz RobotFramework
+
