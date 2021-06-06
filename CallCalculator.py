@@ -13,8 +13,7 @@ class CallCalculator:
         num_a = c_float(num_a)
         num_b = c_float(num_b)
        
-        answer = self.libc.calculator(sign, num_a, num_b)
-        self.result += answer
+        self.result = round(self.libc.calculator(sign, num_a, num_b), 4)
 
     def check_result(self, expected: float) -> None:
         if self.result != expected:
@@ -28,4 +27,18 @@ class CallCalculator:
         num_a = c_float(num_a)
         num_b = c_float(num_b)
 
-        self.result = self.libc.calculator(sign, num_a, num_b);
+        self.result = round(self.libc.calculator(sign, num_a, num_b), 4)
+
+    def mul_numbers(self, num_a: float, num_b: float) ->None:
+        sign = c_wchar("*")
+        num_a = c_float(num_a)
+        num_b = c_float(num_b)
+
+        self.result = round(self.libc.calculator(sign, num_a, num_b), 4)
+
+    def div_numbers(self, num_a: float, num_b: float) -> None:
+        sign = c_wchar("/")
+        num_a = c_float(num_a)
+        num_b = c_float(num_b)
+
+        self.result = round(self.libc.calculator(sign, num_a, num_b), 4)

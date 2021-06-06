@@ -6,7 +6,7 @@ Resource            keywords.robot
 Test Template       Addition
 
 ***Test Cases***    num_a       num_b       expected
-Addition Test       
+Integer Addition Test       
     [Tags]  Smoke
                     2           2           4
                     1           1           2
@@ -15,6 +15,13 @@ Addition Test
                     -1          1           0
                     -1          -1          -2
                     0           0           0
+
+Float Addition Test
+    [Tags]  Non-Essential                    
+                    0.5         0.4         0.9
+                    0.4         -0.5        -0.1
+                    1.1         -1.1        0
+                    1.1         1.1         2.2
 
 
 

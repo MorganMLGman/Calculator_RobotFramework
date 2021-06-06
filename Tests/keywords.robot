@@ -22,3 +22,11 @@ Clear Calculator
 Sub two numbers
     [Arguments]     ${num_a}        ${num_b}
     sub_numbers     ${num_a}        ${num_b}
+
+Mul two numbers
+    [Arguments]     ${num_a}        ${num_b}
+    mul_numbers     ${num_a}        ${num_b}
+
+Div two numbers
+    [Arguments]     ${num_a}        ${num_b}
+    div_numbers     ${num_a}        ${num_b}
