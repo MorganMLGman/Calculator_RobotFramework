@@ -1,4 +1,5 @@
 from ctypes import *
+from os import error, terminal_size
 
 
 class CallCalculator:
@@ -7,6 +8,7 @@ class CallCalculator:
         self.libc.calculator.argtypes = [c_wchar, c_float, c_float]
         self.libc.calculator.restype = c_float
         self.result = 0
+        self.stdout = ""
 
     def add_numbers(self, num_a: float, num_b: float) -> None:
         sign = c_wchar("+")
@@ -17,10 +19,17 @@ class CallCalculator:
 
     def check_result(self, expected: float) -> None:
         if self.result != expected:
-            raise AssertionError(f"{self.result} != {expected}")
+            raise AssertionError(f"{expected} != {self.result}, {type(expected)}, {type(self.result)}")
+
+
+    def check_error(self, not_expected: str):
+        if str(self.result) in not_expected:
+            raise AssertionError(f"Division by 0 is allowed {type(self.result)}, {str(self.result)}")
+        else:
+            pass
 
     def clear_result(self):
-        self.result = 0;
+        self.result = 0
 
     def sub_numbers(self, num_a: float, num_b: float) ->None:
         sign = c_wchar("-")
@@ -40,5 +49,10 @@ class CallCalculator:
         sign = c_wchar("/")
         num_a = c_float(num_a)
         num_b = c_float(num_b)
+        
+        self.result = round(self.libc.calculator(sign, num_a, num_b), 4)     
 
-        self.result = round(self.libc.calculator(sign, num_a, num_b), 4)
+# test = CallCalculator()
+
+# test.div_numbers(5, 0)
+# test.check_result("inf")

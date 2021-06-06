@@ -2,3 +2,5 @@
 Tests/additionTest.robot
 Tests/subtractionTest.robot
 Tests/multiplicationTest.robot
+Tests/divisionTest.robot
+Tests/zeroDivisionTest.robot

@@ -148,6 +148,7 @@ output.xml
 *.o
 *.so
 libtstdll.a
+*.exe
 
 
 # IDE files

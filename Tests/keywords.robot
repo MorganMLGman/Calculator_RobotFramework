@@ -30,3 +30,7 @@ Mul two numbers
 Div two numbers
     [Arguments]     ${num_a}        ${num_b}
     div_numbers     ${num_a}        ${num_b}
+    
+Result error
+    [Arguments]     ${expected}
+    check_error     ${expected}

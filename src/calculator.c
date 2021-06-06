@@ -20,7 +20,7 @@ EXPORT float div(float num_a, float num_b)
 {
     if(num_b == 0)
     {
-        printf("Dividing by 0 is not possible!\n");
+        //printf("Dividing by 0 is not possible!\n");
         return 0;
     }
     else
