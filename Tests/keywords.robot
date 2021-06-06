@@ -34,3 +34,7 @@ Div two numbers
 Result error
     [Arguments]     ${expected}
     check_error     ${expected}
+
+Mod from numbers
+    [Arguments]     ${num_a}        ${num_b}
+    mod_numbers     ${num_a}        ${num_b}

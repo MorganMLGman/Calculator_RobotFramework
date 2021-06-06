@@ -1,6 +1,7 @@
 --name Collection of calculator tests
-Tests/additionTest.robot
-Tests/subtractionTest.robot
-Tests/multiplicationTest.robot
-Tests/divisionTest.robot
-Tests/zeroDivisionTest.robot
+tests/additionTest.robot
+tests/subtractionTest.robot
+tests/multiplicationTest.robot
+tests/divisionTest.robot
+tests/zeroDivisionTest.robot
+tests/moduloTest.robot

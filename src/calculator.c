@@ -1,5 +1,6 @@
 #include "calculator.h"
 #include <stdio.h>
+#include <math.h>
 
 EXPORT float add(float num_a, float num_b)
 {
@@ -31,7 +32,7 @@ EXPORT float div(float num_a, float num_b)
 
 EXPORT float mod(float num_a, float num_b)
 {
-    return (float)((int)num_a % (int)num_b);
+    return fmod(num_a, num_b);
 }
 
 EXPORT float calculator(char operator, float num_a, float num_b)

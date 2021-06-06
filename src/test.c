@@ -1,8 +1,11 @@
 #include <stdio.h>
-#include "calculator.h"
+//#include "calculator.h"
+#include <math.h>
 
 int main(){
 
-    printf("%f", div(1, 0));
+    //printf("%f\n", mod(-5.5, -0.1));
+    printf("%f\n", fmod(-5.5, -0.1));
+
     return 0;
 }
