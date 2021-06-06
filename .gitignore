@@ -148,3 +148,9 @@ output.xml
 *.o
 *.so
 libtstdll.a
+
+
+# IDE files
+
+.idea*
+.vscode*
