@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.8.8 on win32)" generated="20210606 16:47:48.038" rpa="false" schemaversion="2">
+<suite id="s1" name="Keyword" source="C:\Users\cholo\Desktop\Praca\Robot\Praca domowa\keyword.robot">
+<test id="s1-t1" name="Addition_numbers">
+<kw name="Add Numbers" library="CallCalculator">
+<arg>1</arg>
+<arg>1</arg>
+<status status="PASS" starttime="20210606 16:47:48.072" endtime="20210606 16:47:48.072"/>
+</kw>
+<kw name="Check Result" library="CallCalculator">
+<arg>3</arg>
+<msg timestamp="20210606 16:47:48.074" level="FAIL">2.0 != 3.0</msg>
+<status status="FAIL" starttime="20210606 16:47:48.073" endtime="20210606 16:47:48.074"/>
+</kw>
+<status status="FAIL" starttime="20210606 16:47:48.068" endtime="20210606 16:47:48.074">2.0 != 3.0</status>
+</test>
+<doc>Set of keywords.</doc>
+<status status="FAIL" starttime="20210606 16:47:48.047" endtime="20210606 16:47:48.076"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Keyword">Keyword</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
