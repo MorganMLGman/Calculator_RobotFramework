@@ -141,6 +141,7 @@ cython_debug/
 
 report.html
 log.html
+output.xml
 
 # C compile files
 
