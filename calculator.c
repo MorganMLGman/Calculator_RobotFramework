@@ -8,7 +8,7 @@ EXPORT float add(float num_a, float num_b)
 
 EXPORT float sub(float num_a, float num_b)
 {
-    return num_a + num_b;
+    return num_a - num_b;
 }
 
 EXPORT float mul(float num_a, float num_b)

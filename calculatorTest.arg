@@ -1,0 +1,3 @@
+--name Collection of calculator tests
+additionTest.robot
+subtractionTest.robot
