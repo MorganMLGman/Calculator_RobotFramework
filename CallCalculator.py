@@ -3,7 +3,7 @@ from ctypes import *
 
 class CallCalculator:
     def __init__(self) -> None:
-        self.libc = cdll.LoadLibrary("./calculator.dll")
+        self.libc = cdll.LoadLibrary("./src/calculator.dll")
         self.libc.calculator.argtypes = [c_wchar, c_float, c_float]
         self.libc.calculator.restype = c_float
         self.result = 0
