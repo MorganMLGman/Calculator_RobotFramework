@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation   Set of keywords.
-Library         CallCalculator.py
-Library         LibBuild.py
+Library         ../CallCalculator.py
+Library         ../LibBuild.py
 
 
 *** Keywords ***

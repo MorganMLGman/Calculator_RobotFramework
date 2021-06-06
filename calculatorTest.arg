@@ -1,3 +1,3 @@
 --name Collection of calculator tests
-additionTest.robot
-subtractionTest.robot
+Tests/additionTest.robot
+Tests/subtractionTest.robot
