@@ -2,22 +2,22 @@
 #include <stdio.h>
 #include <math.h>
 
-EXPORT float add(float num_a, float num_b)
+EXPORT double add(double num_a, double num_b)
 {
     return num_a + num_b;
 }
 
-EXPORT float sub(float num_a, float num_b)
+EXPORT double sub(double num_a, double num_b)
 {
     return num_a - num_b;
 }
 
-EXPORT float mul(float num_a, float num_b)
+EXPORT double mul(double num_a, double num_b)
 {
     return num_a * num_b;
 }
 
-EXPORT float div(float num_a, float num_b)
+EXPORT double div(double num_a, double num_b)
 {
     if(num_b == 0)
     {
@@ -30,12 +30,12 @@ EXPORT float div(float num_a, float num_b)
     }
 }
 
-EXPORT float mod(float num_a, float num_b)
+EXPORT double mod(double num_a, double num_b)
 {
     return fmod(num_a, num_b);
 }
 
-EXPORT float calculator(char operator, float num_a, float num_b)
+EXPORT double calculator(char operator, double num_a, double num_b)
 {
     switch (operator)
     {

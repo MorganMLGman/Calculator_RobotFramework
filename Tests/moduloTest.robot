@@ -41,7 +41,7 @@ Float Modulo Test
                         5.5             -3.6             1.9             
                         -5.5            -5.5             0
                         -5.5            -5.0             -0.5
-                        -5.5            -0.1             0  # Chyba błąd w bibliotece 
+                        -5.5            -0.1             0  # Błąd wynikający z niedokładności double 
                         -5.5            -1.0             -0.5
                         -5.5            -0.2             -0.1
                         -2.2            -0.1             0
