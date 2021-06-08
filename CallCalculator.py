@@ -5,15 +5,15 @@ from os import error, terminal_size
 class CallCalculator:
     def __init__(self) -> None:
         self.libc = cdll.LoadLibrary("./src/calculator.dll")
-        self.libc.calculator.argtypes = [c_wchar, c_double, c_double]
-        self.libc.calculator.restype = c_double
+        self.libc.calculator.argtypes = [c_wchar, c_float, c_float]
+        self.libc.calculator.restype = c_float
         self.result = 0
         self.stdout = ""
 
     def add_numbers(self, num_a: float, num_b: float) -> None:
         sign = c_wchar("+")
-        num_a = c_double(num_a)
-        num_b = c_double(num_b)
+        num_a = c_float(num_a)
+        num_b = c_float(num_b)
        
         self.result = round(self.libc.calculator(sign, num_a, num_b), 4)
 
@@ -33,29 +33,29 @@ class CallCalculator:
 
     def sub_numbers(self, num_a: float, num_b: float) ->None:
         sign = c_wchar("-")
-        num_a = c_double(num_a)
-        num_b = c_double(num_b)
+        num_a = c_float(num_a)
+        num_b = c_float(num_b)
 
         self.result = round(self.libc.calculator(sign, num_a, num_b), 4)
 
     def mul_numbers(self, num_a: float, num_b: float) ->None:
         sign = c_wchar("*")
-        num_a = c_double(num_a)
-        num_b = c_double(num_b)
+        num_a = c_float(num_a)
+        num_b = c_float(num_b)
 
         self.result = round(self.libc.calculator(sign, num_a, num_b), 4)
 
     def div_numbers(self, num_a: float, num_b: float) -> None:
         sign = c_wchar("/")
-        num_a = c_double(num_a)
-        num_b = c_double(num_b)
+        num_a = c_float(num_a)
+        num_b = c_float(num_b)
         
         self.result = round(self.libc.calculator(sign, num_a, num_b), 4)    
 
     def mod_numbers(self, num_a: float, num_b: float) ->None:
         sign = c_wchar("%")
-        num_a = c_double(num_a)
-        num_b = c_double(num_b)
+        num_a = c_float(num_a)
+        num_b = c_float(num_b)
         
         self.result = round(self.libc.calculator(sign, num_a, num_b), 4)
 
