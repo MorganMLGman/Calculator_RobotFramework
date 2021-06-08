@@ -38,3 +38,7 @@ Result error
 Mod from numbers
     [Arguments]     ${num_a}        ${num_b}
     mod_numbers     ${num_a}        ${num_b}
+
+Expression calculation
+    [Arguments]             ${string}
+    calculate_expression    ${string}
