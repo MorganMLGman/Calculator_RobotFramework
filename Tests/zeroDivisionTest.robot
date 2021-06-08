@@ -17,7 +17,7 @@ Integer Zero Division Test
                     0           -1          [inf, nan, -inf]
                     -1          -1          [inf, nan, -inf]
 
-Fload Zero Division Test
+Float Zero Division Test
     [Tags]  Smoke
                     1.5         0.0         [inf, nan, -inf]
                     0.0         1.5         [inf, nan, -inf]

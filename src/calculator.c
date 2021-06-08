@@ -32,7 +32,14 @@ EXPORT float div(float num_a, float num_b)
 
 EXPORT float mod(float num_a, float num_b)
 {
-    return fmod(num_a, num_b);
+    if(num_b == 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return fmod(num_a, num_b);
+    }
 }
 
 EXPORT float calculator(char operator, float num_a, float num_b)

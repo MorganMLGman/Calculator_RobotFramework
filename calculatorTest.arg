@@ -5,3 +5,4 @@ tests/multiplicationTest.robot
 tests/divisionTest.robot
 tests/zeroDivisionTest.robot
 tests/moduloTest.robot
+tests/zeroModuloTest.robot
