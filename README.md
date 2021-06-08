@@ -1,4 +1,4 @@
-# Projekt mający na celu pokazanie możliwości testowania kodu napisanego w języku C, przy wykorzystaniu jeżyka Python oraz RobotFramework
+# Projekt mający na celu pokazanie możliwości testowania kodu napisanego w języku C, przy wykorzystaniu języka Python oraz RobotFramework
 
 ## Instrukcja kompilacji kodu C do współdzielonej biblioteki dll
 
@@ -17,3 +17,11 @@
    
    Wykorzystać do tego należy polecenie `gcc -c plik.c`. W tym przypadku `gcc -c calculator.c`. Projekt zostanie skompilowany oraz utworzony zostanie plik `calculator.o`.
 
+3. Teraz należy skompliować plik do biblioteki współdzielonej **_DLL_**
+
+    Wykorzystać należy do tego polecenie `gcc -shared -o plik_wy.dll -Wl,--out-implib,libtstdll.a plik_we.o`. Utworzony zostanie plik biblioteki DLL.
+
+4. Skompilowany plik **_DLL_** należy podać jako parametr funkcji _LoadLibrary_ z biblioteki _ctypes_
+
+    ![Load Library](images/load_library.png)
+    
